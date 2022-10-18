@@ -5,3 +5,143 @@
 
    Para acessar você vai criar seu cadastro normalmente como no facebook e pronto vc já possui sua página no github 
 
+Intruções para subir um código para o GitHub pela primeira vez:
+
+
+
+-Primeiramente abra o github
+
+-Crie um novo Repositorio 
+
+- Coloque o nome desse repositório, descrição e adicione README.md 
+
+-Abra o git bash na pasta do arquivo que você quer subir, nesse momento já evitamos 
+escrever todo o caminho para chegar nesse arquivo
+
+-Para abrir o git bash na pasta é so clicar na pasta + botão direito se não aparecer a opção 
+Guit Bash Here clica em mostrar mais opções e estará lá !! Ao clicar nesse opção vai abrir o terminal do git 
+
+Estando na pasta vamos para os comandos git 
+
+-Primeiro comando :
+     git init 
+
+esse comando indica que foi iniciado um repositório vazio dentro dessa pasta 
+
+-Segundo comando: 
+    git add .
+    git add *
+
+esses dois comandos adiciona todos os arquivos da pasta para o repositório local da sua maquina (possuem a mesma finalidade)
+
+   git add nome do arquivo 
+
+esse comando adiciona um arquivo especifico no seu repositório local 
+
+Importante --> ao dar um git add esses arquivos deixam de estar na fase 
+Untracked (git ainda não tem conheciemento desses arquivos) e vão para fase de Staged(prontos para serem comitados,
+o git já sabe da existência deles e já configurou), também é gerado um sha1 desse arquivo que é uma identidade atual e toda vez que esse arquivo for
+modificado até mesmo acrescentado uma vírgula esse sha1 muda. 
+
+-Terceiro comando:
+    git commit -m "descrição rapida da ação feita"
+
+esse é o comando do git que dá significado as alterações ele carrega essa mensagem com métodos internos como autor, data que foi modificado e hora.
+Uma explicação simples o commit pega esse codigo e (tira uma foto do jeito que ele se encontra no momento atual + o sha1 desse arquivo)
+os dois juntos são usados para identificar modificações se caso alguém contribuir para o seu código no github 
+
+-Quarto comando 
+    git branch -M main 
+
+ele cria a ramificação do seu código
+
+-Quinto comando 
+  git remote add origin URL do seu repositório no git 
+
+-Sexto comando 
+   git push -u origin main 
+   
+esse sim é o comando que vai subir seu código para o github mais conhecido como empurrar
+  
+
+
+Intruções para clonar um código do GitHub para sua maquina:
+
+
+-Primeiramente abra o github
+
+-Vá até o repositório que você quer clonar 
+
+-Copia a URL do repositório 
+
+-Abra o git bash na pasta do arquivo que você quer subir, nesse momento já evitamos 
+escrever todo o caminho para chegar nesse arquivo
+
+-Para abrir o git bash na pasta é so clicar na pasta + botão direito se não aparecer a opção 
+Guit Bash Here clica em mostrar mais opções e estará lá !! Ao clicar nesse opção vai abrir o terminal do git 
+
+
+
+Estando na pasta vamos para os comandos git 
+
+
+-Primeiro comando:
+   git clone URL do repositorio 
+
+ele automaticamente já vai clonar e colocar essa pasta aonde vc iniciou o git 
+
+Importante --> Agora você pode contribuir para esse código fazendo as devidas imcrementações e melhorando o código 
+Agora como colocar esse arquivo atualizado no github de novo
+
+-Segundo comando:
+    cd nome da pasta da foi clonada 
+
+esse comando cd ele serve tanto no git quanto no terminal (usado para entrar em uma pasta através da linha de comando)
+
+-Terceiro comando 
+    git status 
+
+ao executar esse comando ele vai dizer o status atual que neste caso, há um arquivo que o git não conhece ele ficará com o nome vermelho 
+o git vai pedir para adicionar esse arquivo
+
+-Quarto comando 
+ 
+   git add .
+   git add *
+como já vimos esses dois comandos adiciona todos os arquivos da pasta para o repositório local da sua maquina (possuem a mesma finalidade)
+ 
+  git add nome do arquivo
+
+-Quinto comando:
+  git status 
+
+vai dizer que precisamos fazer um commit 
+
+-Sexto comando:
+   git commit -m "descrição rapida da ação feita"
+
+
+-Sétimo comando 
+  git status 
+
+ao executar vai dizer que basta fazer um push, ou seja, empurrar esse código para o github 
+
+-Oitavo comando:
+
+git push origin main
+
+esse comando vai empurra esse código para o repositório clonado 
+
+
+OBSERVAÇÃO: nessas situações usamos muito o git status pois ele que nos direciona os passos que devemos seguir para 
+que tudo ocorra com sucesso, eles nos mostra os estados da nossa aplicação no git. 
+
+
+
+
+
+
+
+
+
+

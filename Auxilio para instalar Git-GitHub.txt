@@ -1,0 +1,7 @@
+* Link para instalaçã do Git Bash - https://git-scm.com/download/win
+
+ * Para o acesso ao GitHub você pode acessar pelo Google Chome
+   Link para acesso - https://github.com/
+
+   Para acessar você vai criar seu cadastro normalmente como no facebook e pronto vc já possui sua página no github 
+

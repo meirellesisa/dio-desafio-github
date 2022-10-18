@@ -19,3 +19,6 @@ Ai que entra essa outra ferramenta
 * git commit -m "descrição desse commit"
 * git push origin master 
 * git clone URL do seu repositório
+* git remote add origin URL do seu repositório 
+* git branch -M main 
+* git push -u origin main 
